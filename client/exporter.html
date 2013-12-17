@@ -1,0 +1,54 @@
+<head>
+  <title>Mixpanel API Tool</title>
+</head>
+
+<body>
+	<h1>Mixpanel API Tool</h1>
+	<div>
+		<ul class='nav nav-pills'>
+			<li><a href='/export'>Export data</a></li>
+			<li><a href='/split'>Split data</a></li>
+			<li><a href='/import'>Import data</a></li>
+		</ul>
+	</div>
+	{{> apiCreds}}
+	<div>
+		{{renderRouter}}
+	</div>
+</body>
+
+<template name='start'>
+	<p>Data export/import for Mixpanel</p>
+</template>
+
+<template name='apiCreds'>
+	<div>
+		<label>Mixpanel API key</label>
+		<input type='text' id='mixpanel-api-key' />
+		<label>Mixpanel API secret</label>
+		<input type='text' id='mixpanel-api-secret' />
+		<label>Mixpanel API token</label>
+		<input type='text' id='mixpanel-api-token' />
+		<button class='btn btn-primary'>SUBMIT</button>
+	</div>
+</template>
+
+<template name="exportData">
+	<label>Start date:</label>
+	<input type='text' id='start-date' class='datepicker' value='{{oneWeekAgo}}'></input>
+	<label>End date:</label>
+	<input type='text' id='end-date' class='datepicker' value='{{today}}'></input>
+	<p>Note that dates are inclusive</p>
+	<button class='btn btn-primary'>EXPORT</button>
+</template>
+
+<template name='splitData'>
+	<input type='file' id='filepicker'></input>
+	<input type='text' id='size' value='40000'></input>
+	<button class='btn btn-primary'>SPLIT</button>
+</template>
+
+<template name='importData'>
+	<input type='file' id='filepicker'></input>
+	<button class='btn btn-primary'>IMPORT</button>
+</template>

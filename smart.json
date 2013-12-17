@@ -1,0 +1,8 @@
+{
+  "packages": {
+    "npm": {},
+    "filesaver": {},
+    "meteor-datejs": {},
+    "iron-router": {}
+  }
+}

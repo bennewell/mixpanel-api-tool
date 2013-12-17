@@ -1,0 +1,33 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "npm": {},
+      "filesaver": {},
+      "meteor-datejs": {},
+      "iron-router": {}
+    },
+    "packages": {
+      "npm": {
+        "git": "https://github.com/arunoda/meteor-npm.git",
+        "tag": "v0.2.2",
+        "commit": "ad83acff83385d5ea05997c8bbc2d7493ba4c04e"
+      },
+      "filesaver": {
+        "git": "https://github.com/Meloncon/meteor-filesaver.git",
+        "tag": "v0.0.1",
+        "commit": "650d840d168cf9905908fbfb714cb33388321d4d"
+      },
+      "meteor-datejs": {
+        "git": "https://github.com/patrickocoffeyo/meteor-datejs.git",
+        "tag": "v0.0.1",
+        "commit": "7459ddf9b157dda640eb5bf72a0f5fa342cdb51d"
+      },
+      "iron-router": {
+        "git": "https://github.com/EventedMind/iron-router.git",
+        "tag": "v0.6.1",
+        "commit": "4e1ee0581d68bff422a915dacb0bd30eae10fe08"
+      }
+    }
+  }
+}
