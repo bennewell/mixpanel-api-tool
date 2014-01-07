@@ -6,3 +6,5 @@ This is a simple MeteorJS app which lets you:
 - Import data to a Mixpanel project
 
 It doesn't like big files with lots of events in them. I've found that limiting the amount of events in a file to at most 40,000 seems to be ok. YMMV.
+
+Requires https://github.com/oortcloud/meteorite
